@@ -1,0 +1,484 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    @font-face {
+        src: url(../font/Myriad.otf);
+        font-family: Myriad;
+    }
+    
+    body {
+        font-family: Myriad;
+        background: #000;
+    }
+    
+     ::placeholder {
+        color: #fff;
+        font-size: 1.2em;
+    }
+    /* @keyframes colorBackground {
+    0% {
+        background-color: rgb(97, 97, 97);
+        color: rgb(136, 5, 5);
+    }
+    50% {
+        background-color: rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
+    }
+} */
+    
+    @keyframes lycfbaynhay {
+        0% {
+            transform: translateY(-5vh);
+        }
+        50% {
+            transform: translateY(-20vh);
+        }
+        100% {
+            transform: translateY(-5vh);
+        }
+    }
+    
+     :root {
+        --main-color: #a3704d;
+    }
+    
+    .app {
+        position: relative;
+        width: 88%;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    
+    .audio-beat {
+        display: none;
+    }
+    
+    .taskbar {
+        width: 5.625em;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .taskbar-all {
+        width: 100%;
+        height: 7%;
+        margin: 2% 0;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: auto;
+    }
+    
+    .taskbar-up {}
+    
+    .taskbar-pre {
+        color: rgb(255, 255, 255, 0.5);
+    }
+    
+    .taskbar-now {
+        color: rgb(255, 255, 255);
+    }
+    
+    .taskbar-next {
+        color: rgb(255, 255, 255, 0.5);
+    }
+    
+    .taskbar-down {
+        /* padding-bottom: 2%; */
+    }
+    
+    .header {
+        width: calc(100% -2em);
+        height: 5.625em;
+        display: flex;
+        margin-top: 2em;
+    }
+    
+    .div-logo {
+        width: 16%;
+        height: 5.625em;
+        text-align: center;
+    }
+    
+    .img-logo {
+        max-width: 5em;
+        width: 100%;
+        height: auto;
+    }
+    
+    .s-menu {
+        width: 20%;
+        height: auto;
+        display: none;
+    }
+    
+    .s-icon-menu {
+        font-size: 4em;
+        color: var(--main-color);
+        display: none;
+    }
+    
+    .div-menuheader {
+        padding-left: 1em;
+        /* display: flex; */
+        height: 5.625em;
+        /* width: 68%; */
+        /* flex-wrap: wrap-reverse; */
+    }
+    
+    .div-menu {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .nav {
+        width: 100%;
+        display: inline;
+    }
+    
+    .nav>li {
+        display: inline;
+        color: var(--main-color)
+    }
+    
+    .nav>li>a {
+        color: var(--main-color);
+        text-decoration: none;
+        font-size: 2rem;
+        padding: 0 15px;
+        font-weight: 300
+    }
+    
+    .nav>li>a:hover {
+        text-decoration: underline;
+    }
+    
+    .div-search {
+        height: 5.625em;
+        text-align: right;
+        flex: 1;
+        justify-self: end;
+    }
+    
+    .input-search {
+        width: 70%;
+        height: auto;
+        padding: 0.5em;
+        border-radius: 15px;
+        text-align: center;
+        background: var(--main-color);
+        color: #fff;
+        display: none;
+    }
+    
+    .img-search {
+        width: 2em;
+        height: auto;
+        cursor: pointer;
+    }
+    
+    .input-search .active {
+        display: block;
+    }
+    
+    .body {
+        padding-top: 3em;
+        margin-top: 2em;
+        display: flex;
+        justify-content: space-around;
+        height: calc(80vh)
+    }
+    
+    .about {
+        width: 50%;
+        padding-left: 4em;
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .brand-name {
+        color: white;
+        font-size: 5em;
+        font-weight: 200;
+    }
+    
+    .brand-title {
+        color: white;
+        font-size: 1em;
+        line-height: 1.6;
+    }
+    
+    .div-btn-sign {
+        width: 100%;
+        height: auto;
+        /* display: flex; */
+        margin-top: 5em;
+        padding-left: 5em;
+    }
+    
+    #btn-signup {
+        border-radius: 0.75em;
+        height: 2em;
+        font-size: 1.3em;
+        width: 9em;
+        border: 2px solid;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    
+    #btn-signup:hover {
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    #btn-signin {
+        background: #000;
+        color: #fff;
+        border-radius: 0.75em;
+        height: 2em;
+        font-size: 1.3em;
+        width: 9em;
+        text-transform: uppercase;
+        font-weight: 800;
+        border: 2px solid;
+        margin-left: 6%;
+    }
+    
+    #btn-signin:hover {
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+    }
+    
+    .banner {
+        width: 50%;
+        text-align: center;
+        flex: 2;
+        animation: colorBackground 15s infinite;
+        -webkit-animation: colorBackground 15s infinite;
+        -moz-animation: colorBackground 15s infinite;
+        -o-animation: colorBackground 15s infinite;
+    }
+    
+    .img-lycf {
+        height: auto;
+        max-width: 100%;
+        animation: lycfbaynhay 5s infinite;
+    }
+    /* ----------------- */
+    /* Start LOGIN */
+    
+    .modal-signin {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    
+    .modal-signin.open {
+        display: flex;
+    }
+    
+    .modal-signin-container {
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        width: 42.5em;
+        max-width: calc(100% - 32px);
+        min-height: 80vh;
+        position: relative;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    
+    .heading-signin {
+        width: 100%;
+        height: calc(25vh);
+    }
+    
+    .logo-signin {
+        height: 5em;
+        width: auto;
+    }
+    
+    .title-signin {
+        font-size: 2em;
+    }
+    
+    .title-mini-signin {}
+    
+    .title-logo-signin {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: var(--main-color)
+    }
+    
+    .form-signin {
+        width: 100%;
+        height: calc(55vh);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .label-email-signin,
+    .label-password-signin {
+        align-self: flex-start;
+        font-size: 1.2em;
+        margin-top: 12px;
+        padding-left: 20px
+    }
+    
+    .reset-pass {
+        align-self: flex-start;
+        padding-left: 20px
+    }
+    
+    .input-email-signin,
+    .input-password-signin,
+    .btn-login-signin {
+        height: 3em;
+        border: 1px solid #000;
+        border-radius: 30px;
+    }
+    
+    .btn-login-signin {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: rgb(40, 0, 151);
+        font-weight: bold;
+        color: #fff;
+    }
+    
+    .signup-withfb,
+    .signup-withgg {
+        margin-top: 20px;
+        align-self: center;
+        height: 2.5em;
+        width: 20em;
+        border: 1px solid #000;
+        border-radius: 30px;
+        line-height: 2.5em;
+    }
+    
+    .signup-withfb {}
+    
+    .close-signin {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    /* ---------------------- */
+    /* EndLogin */
+    /* --------------------- */
+    /* Start SignUp */
+    
+    .modal-signup {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    
+    .modal-signup.open {
+        display: flex;
+    }
+    
+    .modal-signup-container {
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        width: 42.5em;
+        max-width: calc(100% - 32px);
+        min-height: 80vh;
+        position: relative;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    /* End SignUp */
+    
+    .menu-hide {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: flex-end;
+        display: none;
+    }
+    
+    .menu-hide.open {
+        display: flex;
+    }
+    
+    .menu-hide-container {
+        background-color: rgba(0, 0, 0);
+        width: 8em;
+        height: 100%;
+        display: block;
+        position: relative;
+    }
+    
+    .nav-s-menu {
+        display: block;
+        margin-top: 2em
+    }
+    
+    .nav-s-menu>li {
+        margin-top: 1em;
+    }
+    
+    .nav-s-menu>li>a {
+        color: var(--main-color);
+        font-size: 2em;
+        text-decoration: unset;
+        margin: 0.5em;
+        border-bottom: 1px solid var(--main-color);
+        padding: 10px 0;
+    }
+    
+    .i-close-menu {
+        color: var(--main-color);
+        position: fixed;
+        z-index: 1;
+        font-size: 2em;
+        top: 0;
+        right: 4em;
+    }
+    
+    .info {
+        height: 100vh;
+        width: 100%;
+        background-color: var(--main-color);
+    }
+    
+    .contact {
+        height: 100vh;
+        width: auto;
+        background-color: #fff;
+    }
+    
+    .footer {
+        background-color: cadetblue;
+        height: 10em;
+    }
