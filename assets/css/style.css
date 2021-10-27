@@ -11,13 +11,14 @@
 
 body {
   font-family: Myriad;
-  background: #000;
+  background: rgb(26, 24, 24);
 }
 
 ::placeholder {
-  color: #fff;
-  font-size: 1.2em;
+  color: rgb(189, 159, 159);
+  font-size: 0.8em;
 }
+
 /* @keyframes colorBackground {
     0% {
         background-color: rgb(97, 97, 97);
@@ -371,6 +372,7 @@ body {
   font-weight: bold;
   color: #fff;
   cursor: pointer;
+  width: 100%;
 }
 
 .btn-login-signin:hover {
@@ -388,6 +390,7 @@ body {
   border-radius: 30px;
   line-height: 2.5em;
   cursor: pointer;
+  width: 100%;
 }
 
 .signup-withfb {
@@ -475,7 +478,7 @@ body {
   border: 1px solid #000;
   border-radius: 30px;
   padding-left: 20px;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 .rules-signup {
@@ -577,7 +580,7 @@ body {
 
 .home-product-item {
   display: block;
-  background-color: var(--white-color);
+  background-color: orange;
   margin-top: 10px;
   position: relative;
   border-radius: 3px;
@@ -628,7 +631,7 @@ body {
 }
 
 .home-product-item__price-current {
-  color: var(--primary-color);
+  color: var(--main-color);
   margin-left: 10px;
   font-weight: 600;
 }
@@ -648,7 +651,7 @@ body {
 }
 
 i.home-product-item__like-icon-fill {
-  color: var(--primary-color);
+  color: var(--main-color);
   display: none;
 }
 
@@ -686,7 +689,7 @@ i.home-product-item__like-icon-fill {
   position: absolute;
   top: 10px;
   left: -4px;
-  color: var(--primary-color);
+  color: var(--main-color);
   background-color: currentColor;
   font-size: 1.2rem;
   font-weight: 500;
@@ -721,11 +724,11 @@ i.home-product-item__like-icon-fill {
   right: 0;
   top: 0;
   width: 40px;
-  height: 35px;
+  height: 50px;
   background-color: rgba(255, 212, 36, 0.6);
   font-size: 1.2rem;
   text-align: center;
-  /* line-height: 1.4rem; */
+  line-height: 1.4rem;
 }
 
 .home-product-item__sale-off::after {
@@ -739,12 +742,23 @@ i.home-product-item__like-icon-fill {
 }
 
 .home-product-item__sale-off-percent {
-  color: var(--primary-color);
+  color: var(--main-color);
   font-weight: 600;
 }
 
 .home-product-item__sale-off-label {
   font-weight: bold;
   color: var(--white-color);
+  font-size: 0.8rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-message {
   font-size: 1.2rem;
+  line-height: 1.6rem;
+  padding: 4px 0 0;
+  color: red;
+  text-align: left;
 }

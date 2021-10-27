@@ -1,0 +1,31 @@
+[
+    {
+    
+        "name" : "Máy pha cà phê 1",
+        "price-old" : 1200000,
+        "price-current" : 800000,
+        "brand" : " Samsung",
+        "origin-name" : "Hàn quốc"  
+      },{
+    
+        "name" : "Máy pha cà phê 2",
+        "price-old" : 1500000,
+        "price-current" : 800000,
+        "brand" : " Samsung",
+        "origin-name" : "Hàn quốc"  
+      },{
+    
+        "name" : "Máy pha cà phê 3",
+        "price-old" : 1200000,
+        "price-current" : 800000,
+        "brand" : " Samsung",
+        "origin-name" : "Hàn quốc"  
+      },{
+    
+        "name" : "Máy pha cà phê 4",
+        "price-old" : 1200000,
+        "price-current" : 800000,
+        "brand" : " Samsung",
+        "origin-name" : "Hàn quốc"  
+      }
+]

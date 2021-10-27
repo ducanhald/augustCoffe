@@ -38,8 +38,8 @@
           <div class="header__menu">
             <ul class="nav">
               <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
               <li><a href="#">Product</a></li>
+              <li><a href="#">About</a></li>
               <li><a href="#">Service</a></li>
             </ul>
           </div>
@@ -64,8 +64,8 @@
               phiền, chỉ còn trong tim sự bình yên đến lạ thường.
             </p>
             <div class="div-btn-sign">
-              <button id="btn-signup">Đăng Kí</button>
-              <button id="btn-signin">Đăng Nhập</button>
+              <button id="btn-signup">Sign Up</button>
+              <button id="btn-signin">Login In</button>
             </div>
           </div>
           <div class="home__banner">
@@ -74,9 +74,9 @@
         </div>
         <div style="margin: 10 0px 0"></div>
         <div class="home-product grid">
-          <div class="row">
-            <div class="col l-2-4 m-4 c-6 color">
-              <a class="home-product-item">
+          <div class="row home-product-list ">
+            <!-- <div class="col l-2-4 m-4 c-12 color home-product-item ">
+              <a class="home-product-item__link">
                 <div
                   class="home-product-item__img"
                   style="background-image: url(./assets/imgs/MayPhacf.png)"
@@ -112,17 +112,14 @@
                     <span class="home-product-item__brand">SamSung</span>
                     <span class="home-product-item__origin-name">Hàn Quóc</span>
                   </div>
-                  <div class="home-product-item__favourite">
-                    <i class="fas fa-check"></i>
-                    <span>Yêu Thích</span>
-                  </div>
+                  
                   <div class="home-product-item__sale-off">
                     <span class="home-product-item__sale-off-percent">10%</span>
                     <span class="home-product-item__sale-off-label">GIẢM</span>
                   </div>
                 </div>
               </a>
-            </div>
+            </div> -->
             
             </div>
           </div>
@@ -136,13 +133,21 @@
                 <img src="/assets/imgs/logo.png" alt="" class="logo-signin" />
                 <p class="title-logo-signin">August Coffe</p>
               </div>
-              <div class="form-signin">
-                <label for="" class="label-email-signin"
+              
+                <form action="" method="POST" class="form" id="form-signin"> 
+                  <div class="form-group">
+                    <label for="" class="label-email-signin"
                   >EMAIL OR PHONE NUMBER</label
                 >
-                <input type="email" class="input-email-signin" />
-                <label for="" class="label-password-signin">PASSWORD</label>
-                <input type="password" class="input-password-signin" />
+                <input type="email" class="input-email-signin" name="email" id="email" placeholder="ex: name@domain.com"/>
+                <span class="form-message"></span>
+                  </div>
+                <div class="form-group">
+                  <label for="" class="label-password-signin">PASSWORD</label>
+                <input type="password" class="input-password-signin" name= "password" id="password" placeholder="Password"/>
+                <span class="form-message"></span>  
+                </div>
+              </form>
                 <p class="reset-pass"><a href="#">Forgot your password?</a></p>
                 <button class="btn-login-signin">LOGIN</button>
                 <p class="p-res-signup">or login with</p>
@@ -153,9 +158,8 @@
                   <i class="ti-facebook"></i> Login with Facebook
                 </div>
                 <p class="p-register">No account? <a href="#">Register</a></p>
-              </div>
               <div class="close-signin">
-                <i class="ti-close i-close-signin"></i>
+                <i class="fas fa-times i-close-signin"></i>
               </div>
             </div>
           </div>
@@ -171,11 +175,11 @@
                 <label for="" class="label-email-signup"
                   >EMAIL OR PHONE NUMBER</label
                 >
-                <input type="email" class="input-email-signup" />
+                <input type="email" class="input-email-signup" placeholder="ex: name@domain.com" />
                 <div class="info-signup">
                   <div class="username-signup">
                     <label for="" class="label-username-signup">USERNAME</label>
-                    <input type="text" class="input-username" />
+                    <input type="text" class="input-username" placeholder="Username" />
                   </div>
                   <div class="birth-signup">
                     <label for="" class="label-birth-signup"
@@ -223,6 +227,6 @@
       </div>
     </div>
 
-    <script src="/assets/js/index.js "></script>
+    <script type="module" src="/assets/js/index.js "></script>
   </body>
 </html>
