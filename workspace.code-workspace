@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Gridcss"
+		},
+		{
+			"path": "..\\..\\Reactjs\\f8ReactJs"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "August CF"
+	}
+}

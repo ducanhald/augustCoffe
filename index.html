@@ -1,127 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/grid.css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link href="assets/imgs/logo.png" rel="icon" />
+    <link
+      rel="stylesheet"
+      href="/assets/font/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
-    <link href="assets/imgs/logo.png" rel="icon">
-    <link rel="stylesheet" href="/assets/font/themify-icons-font/themify-icons/themify-icons.css">
     <title>August Coffe</title>
-</head>
+  </head>
 
-<body>
-    <!-- <audio controls autoplay loop class="audio-beat">
-        <source src="/assets/audio/beat.mp3" type="audio/mpeg">
-      </audio> -->
-    <div class="taskbar">
+  <body>
+    <div class="grid">
+      <!-- <div class="taskbar">
         <div class="taskbar-up taskbar-all">
-            <img src="/assets/imgs/nút lên.png" alt="">
+          <img src="/assets/imgs/nút lên.png" alt="" />
         </div>
-        <div class="taskbar-pre taskbar-all"> 01</div>
-        <div class="taskbar-now taskbar-all"> 02</div>
-        <div class="taskbar-next taskbar-all"> 03</div>
+        <div class="taskbar-pre taskbar-all">01</div>
+        <div class="taskbar-now taskbar-all">02</div>
+        <div class="taskbar-next taskbar-all">03</div>
         <div class="taskbar-down taskbar-all">
-            <img src="/assets/imgs/nút xuống.png" alt="">
+          <img src="/assets/imgs/nút xuống.png" alt="" />
         </div>
-    </div>
-    <div class="app">
+      </div> -->
+      <div class="app">
         <div class="header">
-            <div class="div-logo">
-                <img src="/assets/imgs/logo.png" class="img-logo" alt="">
+          <div class="header__logo">
+            <img src="/assets/imgs/logo.png" class="header__img-logo" alt="" />
+          </div>
+          <div class="header__menu">
+            <ul class="nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Service</a></li>
+            </ul>
+          </div>
+          <div class="header__search">
+            <input type="text" class="input-search" placeholder="Search ..." />
+            <img src="/assets/imgs/search.png" class="img-search" alt="" />
+            <div class="div-menu">
+              <i class="ti-menu-alt s-icon-menu"></i>
             </div>
-            <div class="div-menuheader">
-                <ul class="nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Service</a></li>
-                </ul>
-
-            </div>
-            <div class="div-search">
-                <input type="text" class="input-search" Placeholder="Search ...">
-                <img src="/assets/imgs/search.png" class="img-search" alt="">
-                <div class="div-menu">
-                    <i class="ti-menu-alt s-icon-menu"></i>
-                </div>
-            </div>
-
+          </div>
         </div>
 
-        <div class="body">
-            <div class="about">
-                <p class="brand-name">August Coffe</p>
-                <p class="brand-title">Tháng 8, tháng của sự đặc biệt bởi khoảng khắc giao mùa được hoà lẫn giữa sự bồn chồn đón lấy mùa thu và sự nuối tiếc khi mùa hạ đã chẳng còn ở đó. Còn gì tuyệt vời hơn khi ghé lại với chúng tôi thưởng thức một ly cafe giữa đen và trắng,
-                    rồi cảm nhận bước chân của thời gian đang đi qua kí ức. Để rồi không còn những muộn phiền, chỉ còn trong tim sự bình yên đến lạ thường.</p>
-                <div class="div-btn-sign">
-                    <button id="btn-signup">Đăng Kí</button>
-                    <button id="btn-signin">Đăng Nhập</button>
-                </div>
-
+        <div class="home">
+          <div class="home__about">
+            <p class="brand-name">August Coffe</p>
+            <p class="brand-title">
+              Tháng 8, tháng của sự đặc biệt bởi khoảng khắc giao mùa được hoà
+              lẫn giữa sự bồn chồn đón lấy mùa thu và sự nuối tiếc khi mùa hạ đã
+              chẳng còn ở đó. Còn gì tuyệt vời hơn khi ghé lại với chúng tôi
+              thưởng thức một ly cafe giữa đen và trắng, rồi cảm nhận bước chân
+              của thời gian đang đi qua kí ức. Để rồi không còn những muộn
+              phiền, chỉ còn trong tim sự bình yên đến lạ thường.
+            </p>
+            <div class="div-btn-sign">
+              <button id="btn-signup">Đăng Kí</button>
+              <button id="btn-signin">Đăng Nhập</button>
             </div>
-            <div class="banner">
-                <img src="/assets/imgs/lycf.png" class="img-lycf" alt="">
-            </div>
+          </div>
+          <div class="home__banner">
+            <img src="/assets/imgs/lycf.png" class="img-lycf" alt="" />
+          </div>
         </div>
-        <div class="info"></div>
-        <div class="contact"></div>
-        <div class="footer"></div>
-        <div class="modal-signin">
+        <div style="margin: 10 0px 0"></div>
+        <div class="home-product grid">
+          <div class="row">
+            <div class="col l-2-4 m-4 c-6 color">
+              <a class="home-product-item">
+                <div
+                  class="home-product-item__img"
+                  style="background-image: url(./assets/imgs/MayPhacf.png)"
+                ></div>
+                <div class="home-product-item__content">
+                  <p class="home-product-item__name">
+                    Máy pha cà phê Espresso - Hàng Chính Hãng
+                  </p>
+                  <div class="home-product-item__price">
+                    <span class="home-product-item__price-old">1.200.000</span>
+                    <span class="home-product-item__price-current"
+                      >888.888</span
+                    >
+                  </div>
+                  <div class="home-product-item__action">
+                    <span class="home-product-item__like">
+                      <i
+                        class="home-product-item__like-icon-empty far fa-heart"
+                      ></i>
+                      <i
+                        class="home-product-item__like-icon-fill fas fa-heart"
+                      ></i>
+                    </span>
+                    <div class="home-product-item__rating">
+                      <i class="home-product-item__star--gold fas fa-star"></i>
+                      <i class="home-product-item__star--gold fas fa-star"></i>
+                      <i class="home-product-item__star--gold fas fa-star"></i>
+                      <i class="home-product-item__star--gold fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="home-product-item__origin">
+                    <span class="home-product-item__brand">SamSung</span>
+                    <span class="home-product-item__origin-name">Hàn Quóc</span>
+                  </div>
+                  <div class="home-product-item__favourite">
+                    <i class="fas fa-check"></i>
+                    <span>Yêu Thích</span>
+                  </div>
+                  <div class="home-product-item__sale-off">
+                    <span class="home-product-item__sale-off-percent">10%</span>
+                    <span class="home-product-item__sale-off-label">GIẢM</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+            </div>
+          </div>
+          <div class="contact"></div>
+          <div class="footer"></div>
+          <div class="modal-signin">
             <div class="modal-signin-container">
-                <div class="heading-signin">
-                    <p class="title-signin">
-                        Welcome Back!
-                    </p>
-                    <p class="title-mini-signin">
-                        We're so excited to see again!
-                    </p>
-                    <img src="/assets/imgs/logo.png" alt="" class="logo-signin">
-                    <p class="title-logo-signin">
-                        August Coffe
-                    </p>
+              <div class="heading-signin">
+                <p class="title-signin">Welcome Back!</p>
+                <p class="title-mini-signin">We're so excited to see again!</p>
+                <img src="/assets/imgs/logo.png" alt="" class="logo-signin" />
+                <p class="title-logo-signin">August Coffe</p>
+              </div>
+              <div class="form-signin">
+                <label for="" class="label-email-signin"
+                  >EMAIL OR PHONE NUMBER</label
+                >
+                <input type="email" class="input-email-signin" />
+                <label for="" class="label-password-signin">PASSWORD</label>
+                <input type="password" class="input-password-signin" />
+                <p class="reset-pass"><a href="#">Forgot your password?</a></p>
+                <button class="btn-login-signin">LOGIN</button>
+                <p class="p-res-signup">or login with</p>
+                <div class="signup-withgg">
+                  <i class="ti-google"></i> Login with Google
                 </div>
-                <div class="form-signin">
-                    <label for="" class="label-email-signin ">EMAIL OR PHONE NUMBER</label>
-                    <input type="email" class="input-email-signin">
-                    <label for="" class="label-password-signin">PASSWORD</label>
-                    <input type="password" class="input-password-signin">
-                    <p class="reset-pass">Forgot your password?</p>
-                    <button class="btn-login-signin">LOGIN</button>
-                    <p class="p-res-signup">or login with</p>
-                    <div class="signup-withgg"><i class="ti-google"></i> Sign Up with Google</div>
-                    <div class="signup-withfb"><i class="ti-facebook"></i> Sign Up with Facebook</div>
-                    <p class="p-register">No account? <a>Register</a></p>
-
+                <div class="signup-withfb">
+                  <i class="ti-facebook"></i> Login with Facebook
                 </div>
-                <div class="close-signin">
-                    <i class="ti-close i-close-signin"></i>
-                </div>
+                <p class="p-register">No account? <a href="#">Register</a></p>
+              </div>
+              <div class="close-signin">
+                <i class="ti-close i-close-signin"></i>
+              </div>
             </div>
-
-        </div>
-        <div class="modal-signup">
-            <div class="modal-signup-container"></div>
-        </div>
-        <div class="menu-hide">
+          </div>
+          <div class="modal-signup">
+            <div class="modal-signup-container">
+              <div class="heading-signup">
+                <p class="title-signup">Create Account</p>
+                <p class="title-mini-signup">It's free to get started!</p>
+                <img src="/assets/imgs/logo.png" alt="" class="logo-signup" />
+                <p class="title-logo-signup">August Coffe</p>
+              </div>
+              <div class="form-signup">
+                <label for="" class="label-email-signup"
+                  >EMAIL OR PHONE NUMBER</label
+                >
+                <input type="email" class="input-email-signup" />
+                <div class="info-signup">
+                  <div class="username-signup">
+                    <label for="" class="label-username-signup">USERNAME</label>
+                    <input type="text" class="input-username" />
+                  </div>
+                  <div class="birth-signup">
+                    <label for="" class="label-birth-signup"
+                      >DAY OF BIRTHDAY</label
+                    >
+                    <input type="date" class="input-birth-signup" />
+                  </div>
+                </div>
+                <label for="" class="label-password-signup">PASSWORD</label>
+                <input type="password" class="input-password-signup" />
+                <label for="" class="label-password-signup"
+                  >CONFIRM PASSWORD</label
+                >
+                <input type="password" class="input-password-signup" />
+                <p class="rules-signup">
+                  By clicking Sign Up, you are indicating that you have read and
+                  acknowledge the Terms of Service and Privacy Notice.
+                </p>
+                <button class="btn-login-signup">SIGN UP</button>
+                <p class="p-res-signup">or login with</p>
+                <div class="signup-withgg">
+                  <i class="ti-google"></i> Login with Google
+                </div>
+                <div class="signup-withfb">
+                  <i class="ti-facebook"></i> Login with Facebook
+                </div>
+              </div>
+              <div class="close-signup">
+                <i class="ti-close i-close-signin"></i>
+              </div>
+            </div>
+          </div>
+          <div class="menu-hide">
             <div class="menu-hide-container">
-                <i class="ti-close i-close-menu"></i>
-                <ul class="nav-s-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Service</a></li>
-                </ul>
+              <i class="ti-close i-close-menu"></i>
+              <ul class="nav-s-menu">
+                <li><a href="# ">Home</a></li>
+                <li><a href="# ">About</a></li>
+                <li><a href="# ">Product</a></li>
+                <li><a href="# ">Service</a></li>
+              </ul>
             </div>
+          </div>
         </div>
-
+      </div>
     </div>
 
-    </div>
-
-    <script src="/assets/js/index.js"></script>
-</body>
-
+    <script src="/assets/js/index.js "></script>
+  </body>
 </html>
