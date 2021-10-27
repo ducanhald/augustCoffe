@@ -1,3 +1,4 @@
+import Validator from "./validate";
 const $ = document.querySelector.bind(document);
 const $S = document.querySelector.bind(document);
 const modalSignin = $(".modal-signin");
@@ -74,3 +75,5 @@ menuhide.onclick = function () {
 // lycf.onclick = function() {
 //     changeImg()
 // }
+// Validate
+Validator;
