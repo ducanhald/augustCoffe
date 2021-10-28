@@ -103,91 +103,113 @@ Validator({
 });
 //
 // get productItem dom
-const productList = $(".home-product-list");
-console.log(productList);
+// const productList = $(".home-product-list");
+// var html = productItems.map((item) => {
+//   return `<div class="col l-2-4 m-4 c-12 color home-product-item ">
+//   <a class="home-product-item__link">
+//     <div
+//       class="home-product-item__img"
+//       style="background-image: url(./assets/imgs/MayPhacf.png)"
+//     ></div>
+//     <div class="home-product-item__content">
+//       <p class="home-product-item__name">
+//         ${item.name}
+//       </p>
+//       <div class="home-product-item__price">
+//         <span class="home-product-item__price-old">1.200.000</span>
+//         <span class="home-product-item__price-current"
+//           >888.888</span
+//         >
+//       </div>
+//       <div class="home-product-item__action">
+//         <span class="home-product-item__like">
+//           <i
+//             class="home-product-item__like-icon-empty far fa-heart"
+//           ></i>
+//           <i
+//             class="home-product-item__like-icon-fill fas fa-heart"
+//           ></i>
+//         </span>
+//         <div class="home-product-item__rating">
+//           <i class="home-product-item__star--gold fas fa-star"></i>
+//           <i class="home-product-item__star--gold fas fa-star"></i>
+//           <i class="home-product-item__star--gold fas fa-star"></i>
+//           <i class="home-product-item__star--gold fas fa-star"></i>
+//           <i class="fas fa-star"></i>
+//         </div>
+//       </div>
+//       <div class="home-product-item__origin">
+//         <span class="home-product-item__brand">SamSung</span>
+//         <span class="home-product-item__origin-name">Hàn Quóc</span>
+//       </div>
 
-var productItems = [
-  {
-    name: "Máy pha cà phê 1",
-    priceold: 1200000,
-    pricecurrent: 800000,
-    brand: " Samsung",
-    originname: "Hàn quốc",
-  },
-  {
-    name: "Máy pha cà phê 2",
-    priceold: 1200000,
-    pricecurrent: 800000,
-    brand: " Samsung",
-    originname: "Hàn quốc",
-  },
-  {
-    name: "Máy pha cà phê 5",
-    priceold: 1200000,
-    pricecurrent: 800000,
-    brand: " Samsung",
-    originname: "Hàn quốc",
-  },
-  {
-    name: "Máy pha cà phê 6",
-    priceold: 1200000,
-    pricecurrent: 800000,
-    brand: " Samsung",
-    originname: "Hàn quốc",
-  },
-  {
-    name: "Máy pha cà phê 7",
-    priceold: 1200000,
-    pricecurrent: 800000,
-    brand: " Samsung",
-    originname: "Hàn quốc",
-  },
-];
-var html = productItems.map((item) => {
-  return `<div class="col l-2-4 m-4 c-12 color home-product-item ">
-  <a class="home-product-item__link">
-    <div
-      class="home-product-item__img"
-      style="background-image: url(./assets/imgs/MayPhacf.png)"
-    ></div>
-    <div class="home-product-item__content">
-      <p class="home-product-item__name">
-        ${item.name}
-      </p>
-      <div class="home-product-item__price">
-        <span class="home-product-item__price-old">1.200.000</span>
-        <span class="home-product-item__price-current"
-          >888.888</span
-        >
-      </div>
-      <div class="home-product-item__action">
-        <span class="home-product-item__like">
-          <i
-            class="home-product-item__like-icon-empty far fa-heart"
-          ></i>
-          <i
-            class="home-product-item__like-icon-fill fas fa-heart"
-          ></i>
-        </span>
-        <div class="home-product-item__rating">
-          <i class="home-product-item__star--gold fas fa-star"></i>
-          <i class="home-product-item__star--gold fas fa-star"></i>
-          <i class="home-product-item__star--gold fas fa-star"></i>
-          <i class="home-product-item__star--gold fas fa-star"></i>
-          <i class="fas fa-star"></i>
+//       <div class="home-product-item__sale-off">
+//         <span class="home-product-item__sale-off-percent">10%</span>
+//         <span class="home-product-item__sale-off-label">GIẢM</span>
+//       </div>
+//     </div>
+//   </a>
+// </div>`;
+// });
+//
+const API = "http://localhost:3000/MayPhaCaPhe";
+function getProduct(callback) {
+  fetch(API)
+    .then((response) => response.json())
+    .then(callback);
+}
+getProduct(renderProduct);
+
+// Render Product
+function renderProduct(products) {
+  const productList = $(".home-product-list");
+  var productRender = products.map((productItems) => {
+    return `<div class="col l-2-4 m-4 c-12 color home-product-item ">
+      <a class="home-product-item__link">
+        <div
+          class="home-product-item__img"
+          style="background-image: url(./assets/imgs/MayPhacf.png)"
+        ></div>
+        <div class="home-product-item__content">
+          <p class="home-product-item__name">
+            ${productItems.name}
+          </p>
+          <div class="home-product-item__price">
+            <span class="home-product-item__price-old">1.200.000</span>
+            <span class="home-product-item__price-current"
+              >888.888</span
+            >
+          </div>
+          <div class="home-product-item__action">
+            <span class="home-product-item__like">
+              <i
+                class="home-product-item__like-icon-empty far fa-heart"
+              ></i>
+              <i
+                class="home-product-item__like-icon-fill fas fa-heart"
+              ></i>
+            </span>
+            <div class="home-product-item__rating">
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="home-product-item__star--gold fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="home-product-item__origin">
+            <span class="home-product-item__brand">SamSung</span>
+            <span class="home-product-item__origin-name">Hàn Quóc</span>
+          </div>
+    
+          <div class="home-product-item__sale-off">
+            <span class="home-product-item__sale-off-percent">10%</span>
+            <span class="home-product-item__sale-off-label">GIẢM</span>
+          </div>
         </div>
-      </div>
-      <div class="home-product-item__origin">
-        <span class="home-product-item__brand">SamSung</span>
-        <span class="home-product-item__origin-name">Hàn Quóc</span>
-      </div>
-      
-      <div class="home-product-item__sale-off">
-        <span class="home-product-item__sale-off-percent">10%</span>
-        <span class="home-product-item__sale-off-label">GIẢM</span>
-      </div>
-    </div>
-  </a>
-</div>`;
-});
-productList.innerHTML = html.join("");
+      </a>
+    </div>`;
+  });
+  var productRenders = productRender.join("");
+  productList.innerHTML = productRenders;
+}
